@@ -2,6 +2,10 @@
 
 # Predição de Preços de Imóveis com Machine Learning
 
+## Projeto Final – Ciência de Dados
+**Curso:** Ciência de Dados e Análise Preditiva – SENAI  
+**Autor:** Márcio Paiano de Souza
+
 
 ## Pipeline do projeto
 
@@ -15,9 +19,39 @@
 | 5 — Modelagem | Treinamento e comparação de Regressão Linear, KNN, Árvore de Decisão e Random Forest, com diagnóstico de overfitting pela comparação entre treino e teste. | Modelos treinados e tabela comparativa |
 | 6 — Avaliação e versionamento | Cálculo de MAE, MSE, RMSE e R²; análise gráfica; interpretação em euros; escolha da Random Forest; retreino final com 100% dos dados e versionamento como v1. | `models/v1/` e `outputs/figures/` |
 
-## Projeto Final – Ciência de Dados
-**Curso:** Ciência de Dados e Análise Preditiva – SENAI  
-**Autor:** Márcio Paiano de Souza
+
+
+```
+spanish-housing-price-prediction/
+
+│
+
+├── data/
+│   ├── raw/
+│   ├── processed/
+│   └── final/
+│
+├── models/
+│   └── v1/
+│       ├── modelo_random_forest_v1.pkl
+│       └── metricas_v1.json
+│
+├── notebooks/
+│   └── projetofinal.ipynb
+│
+├── outputs/
+│   └── figures/
+│
+├── src/ (opcional)
+│
+├── README.md
+├── requirements.txt
+├── LICENSE
+└── .gitignore
+```
+
+
+
 
 ---
 ## Base de Dados
@@ -88,34 +122,7 @@ As principais informações disponíveis incluem:
 # Estrutura do projeto
 
 ```
-```
-spanish-housing-price-prediction/
 
-│
-
-├── data/
-│   ├── raw/
-│   ├── processed/
-│   └── final/
-│
-├── models/
-│   └── v1/
-│       ├── modelo_random_forest_v1.pkl
-│       └── metricas_v1.json
-│
-├── notebooks/
-│   └── projetofinal.ipynb
-│
-├── outputs/
-│   └── figures/
-│
-├── src/ (opcional)
-│
-├── README.md
-├── requirements.txt
-├── LICENSE
-└── .gitignore
-```
 
 ---
 
