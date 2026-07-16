@@ -4,7 +4,7 @@
 
 ## Projeto 3 – Ciência de Dados
 **Curso:** Ciência de Dados – SENAI  
-**Autor:** Ulysses Jorge de Aguiar
+**Autor:** Márcio Paiano de Souza
 
 ---
 
