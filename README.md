@@ -2,6 +2,19 @@
 
 # Predição de Preços de Imóveis com Machine Learning
 
+
+## Pipeline do projeto
+
+| Fase | Descrição | Resultado |
+|---|---|---|
+| Extração | Download do dataset público de imóveis da Espanha. Devido ao tamanho do arquivo, a base original não é incluída no repositório e deve ser posicionada manualmente na pasta indicada. | `data/raw/spanish_houses.csv` |
+| 1 — EDA | Análise da distribuição de preços, valores ausentes, outliers, variáveis categóricas, dispersões em relação ao alvo e matriz de correlação. | `outputs/figures/` |
+| 2 — Limpeza | Padronização de textos, remoção dos anúncios de aluguel, exclusão de duplicatas, tratamento de preços inconsistentes e avaliação da qualidade das variáveis numéricas. | Base limpa |
+| 3 — Feature engineering | Criação de `andar`, `exterior`, `floor_na`, `garage_included`, `rooms_per_m2`, `perc_area_util` e `price_log`. A variável `price_m2` foi utilizada apenas para análise, por ser derivada do alvo. | `data/processed/spanish_houses_processed.csv` |
+| 4 — Preparação para modelagem | Seleção das variáveis finais, One-Hot Encoding, análise de VIF, remoção de variáveis redundantes, split 80/20, imputação pela mediana e StandardScaler aplicado com ajuste somente no treino. | `data/final/spanish_houses_final.csv` |
+| 5 — Modelagem | Treinamento e comparação de Regressão Linear, KNN, Árvore de Decisão e Random Forest, com diagnóstico de overfitting pela comparação entre treino e teste. | Modelos treinados e tabela comparativa |
+| 6 — Avaliação e versionamento | Cálculo de MAE, MSE, RMSE e R²; análise gráfica; interpretação em euros; escolha da Random Forest; retreino final com 100% dos dados e versionamento como v1. | `models/v1/` e `outputs/figures/` |
+
 ## Projeto 3 – Ciência de Dados
 **Curso:** Ciência de Dados – SENAI  
 **Autor:** Márcio Paiano de Souza
