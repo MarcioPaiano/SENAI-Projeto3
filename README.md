@@ -1,10 +1,27 @@
 # 🏠 Spanish Housing Price Prediction
 
-# Predição de Preços de Imóveis com Machine Learning
+
 
 ## Projeto Final – Ciência de Dados
 **Curso:** Ciência de Dados e Análise Preditiva – SENAI  
 **Autor:** Márcio Paiano de Souza
+
+## Predição de Preços de Imóveis na Espanha com Machine Learning
+
+Projeto de Ciência de Dados desenvolvido para demonstrar todas as etapas de um pipeline completo de aprendizado de máquina aplicado à regressão, incluindo análise exploratória dos dados (EDA), limpeza e tratamento da base, engenharia de atributos, preparação para modelagem, treinamento e comparação de diferentes algoritmos de regressão, avaliação do desempenho e versionamento do modelo final.
+
+**Base de dados:** Spanish Houses Dataset (Idealista Espanha) — aproximadamente **99 mil anúncios de imóveis residenciais** contendo informações estruturais, localização e características dos imóveis.
+
+**Modelos avaliados:** Regressão Linear, KNN Regressor, Árvore de Decisão e Random Forest (scikit-learn), utilizando variáveis estruturais, características da localização e atributos derivados por engenharia de atributos para prever o preço dos imóveis.
+
+**Modelo campeão:** Random Forest Regressor.
+
+**Desempenho (conjunto de teste):**
+- **R²:** 0,839 (escala logarítmica) / 0,626 (escala original)
+- **MAE:** 0,318 (escala logarítmica) / € 139.308 (escala original)
+- **RMSE:** 0,503 (escala logarítmica) / € 382.600 (escala original)
+
+O projeto foi desenvolvido em **Python** utilizando as bibliotecas **Pandas**, **NumPy**, **Matplotlib**, **Scikit-learn** e **Joblib**, seguindo boas práticas de organização, reprodutibilidade e versionamento de modelos.
 
 
 ## Pipeline do projeto
