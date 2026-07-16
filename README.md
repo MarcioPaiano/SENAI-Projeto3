@@ -45,12 +45,12 @@ spanish-housing-price-prediction/
 
 ├── data/
 │   ├── raw/
-│   ├── processed/
-│   └── final/
+│   ├── processed/df_tratado2
+│   └── final/df_modelo.csv
 │
 ├── models/
 │   └── v1/
-│       ├── modelo_random_forest_v1.pkl
+│       ├── modelo_regressao_rf_final_v1.pkl
 │       └── metricas_v1.json
 │
 ├── notebooks/
