@@ -68,8 +68,6 @@ spanish-housing-price-prediction/
 ```
 
 
-
-
 ---
 ## Base de Dados
 
