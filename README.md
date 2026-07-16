@@ -37,7 +37,7 @@ O projeto foi desenvolvido em **Python** utilizando as bibliotecas **Pandas**, *
 | 6 — Avaliação e versionamento | Cálculo de MAE, MSE, RMSE e R²; análise gráfica; interpretação em euros; escolha da Random Forest; retreino final com 100% dos dados e versionamento como v1. | `models/v1/` e `outputs/figures/` |
 
 
-Estrutura do projeto
+## Estrutura do projeto
 ```
 spanish-housing-price-prediction/
 
