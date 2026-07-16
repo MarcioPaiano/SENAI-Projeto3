@@ -15,7 +15,7 @@
 | 5 — Modelagem | Treinamento e comparação de Regressão Linear, KNN, Árvore de Decisão e Random Forest, com diagnóstico de overfitting pela comparação entre treino e teste. | Modelos treinados e tabela comparativa |
 | 6 — Avaliação e versionamento | Cálculo de MAE, MSE, RMSE e R²; análise gráfica; interpretação em euros; escolha da Random Forest; retreino final com 100% dos dados e versionamento como v1. | `models/v1/` e `outputs/figures/` |
 
-## Projeto 3 – Ciência de Dados
+## Projeto Final – Ciência de Dados
 **Curso:** Ciência de Dados e Análise Preditiva – SENAI  
 **Autor:** Márcio Paiano de Souza
 
@@ -28,7 +28,7 @@ Devido ao tamanho do arquivo (aproximadamente 94 MB), o dataset original não fo
 
 ### Estrutura esperada
 
-Após realizar o download, coloque o arquivo na seguinte pasta:
+Após realizar o download, selecione entre as opções, o arquivo spanish_houses.csv e coloque  na seguinte pasta:
 
 ```
 data/raw/spanish_houses.csv
