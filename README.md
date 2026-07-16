@@ -1,181 +1,57 @@
 # 🏠 Spanish Housing Price Prediction
 
-## 📖 Descrição
+# Predição de Preços de Imóveis com Machine Learning
 
-Este projeto tem como objetivo desenvolver um pipeline completo de Ciência de Dados para prever o preço de imóveis na Espanha utilizando técnicas de Machine Learning.
-
-O projeto contempla todas as etapas de um fluxo de trabalho de Análise Preditiva, incluindo:
-
-- Análise Exploratória dos Dados (EDA)
-- Limpeza e Tratamento dos Dados
-- Engenharia de Atributos (Feature Engineering)
-- Preparação para Modelagem
-- Treinamento e Avaliação de Modelos
-- Versionamento do Modelo
-
-O trabalho foi desenvolvido como parte da disciplina de **Análise Preditiva**.
+## Projeto 3 – Ciência de Dados
+**Curso:** Ciência de Dados – SENAI  
+**Autor:** Ulysses Jorge de Aguiar
 
 ---
 
-# 🎯 Problema de Negócio
+# Objetivo
 
-O mercado imobiliário possui diversos fatores que influenciam o valor de um imóvel, como localização, área construída, quantidade de quartos, banheiros, estado de conservação e infraestrutura.
+Este projeto tem como objetivo desenvolver um modelo de Machine Learning capaz de prever o preço de imóveis a partir de suas características estruturais, localização e atributos do imóvel.
 
-O objetivo deste projeto é construir um modelo capaz de estimar o preço de imóveis com base nessas características, auxiliando processos de:
+Durante o desenvolvimento foram aplicadas todas as etapas de um projeto de Ciência de Dados, incluindo:
 
-- Compra e venda de imóveis
-- Avaliação imobiliária
-- Investimentos
-- Estudos de mercado
-
----
-
-# 📂 Dataset
-
-**Dataset utilizado:**
-
-Spanish Housing Dataset
-
-https://www.kaggle.com/datasets/thedevastator/spanish-housing-dataset-location-size-price-and
-
-O conjunto de dados contém aproximadamente **100 mil imóveis** anunciados na Espanha, incluindo informações como:
-
-- preço
-- área construída
-- área útil
-- localização
-- quartos
-- banheiros
-- elevador
-- garagem
-- piscina
-- terraço
-- estado do imóvel
-- tipo do imóvel
-- indicadores socioeconômicos da província
+- exploração dos dados;
+- limpeza e tratamento da base;
+- engenharia de atributos;
+- análise de multicolinearidade;
+- treinamento de diferentes modelos de regressão;
+- comparação entre algoritmos;
+- avaliação do desempenho;
+- versionamento do modelo final.
 
 ---
 
-# 🛠 Tecnologias Utilizadas
+# Base de dados
 
-- Python 3
-- Pandas
-- NumPy
-- Matplotlib
-- Seaborn
-- Scikit-Learn
-- Statsmodels
-- Joblib
-- Jupyter Notebook
+Foi utilizada a base de imóveis do **Idealista Espanha**, contendo informações sobre milhares de imóveis anunciados para venda.
 
----
+As principais informações disponíveis incluem:
 
-# 📊 Pipeline do Projeto
-
-## Fase 1 — Análise Exploratória
-
-Foram realizadas análises para compreender o comportamento dos dados:
-
-- dimensão do dataset
-- tipos das variáveis
-- estatísticas descritivas
-- identificação de valores ausentes
-- distribuição da variável alvo
-- correlação entre variáveis
-- identificação de outliers
-
-Gráficos utilizados:
-
-- Histograma
-- Boxplot
-- Scatterplot
-- Heatmap de Correlação
+- preço do imóvel;
+- área total;
+- área útil;
+- número de quartos;
+- número de banheiros;
+- tipo do imóvel;
+- andar;
+- garagem;
+- elevador;
+- piscina;
+- jardim;
+- varanda;
+- localização (província, município, distrito e rua);
+- certificado energético;
+- diversas outras características do imóvel.
 
 ---
 
-## Fase 2 — Limpeza dos Dados
+# Estrutura do projeto
 
-As seguintes etapas foram realizadas:
-
-- remoção de registros duplicados
-- remoção de cabeçalhos repetidos
-- tratamento de valores ausentes
-- padronização de textos
-- conversão de tipos
-- tratamento de outliers
-- remoção de colunas sem informação relevante
-
----
-
-## Fase 3 — Feature Engineering
-
-Foram criadas novas variáveis para enriquecer a análise:
-
-- preço por metro quadrado
-- banheiros por quarto
-- índice de conforto
-
----
-
-## Fase 4 — Preparação para Modelagem
-
-Nesta etapa foram realizadas:
-
-- seleção das variáveis
-- One-Hot Encoding
-- análise de multicolinearidade
-- divisão Treino/Teste
-- padronização utilizando StandardScaler
-
----
-
-## Fase 5 — Modelagem
-
-Foram treinados dois modelos:
-
-- Regressão Linear
-- Random Forest Regressor
-
-Os modelos foram comparados utilizando:
-
-- MAE
-- MSE
-- RMSE
-- R²
-
-Também foi realizada a análise de overfitting comparando os conjuntos de treino e teste.
-
----
-
-## Fase 6 — Avaliação
-
-O modelo final foi avaliado por meio de:
-
-- MAE
-- MSE
-- RMSE
-- R²
-
-Também foram construídos gráficos de:
-
-- Valores Reais × Valores Previstos
-- Distribuição dos Resíduos
-- Importância das Variáveis
-
----
-
-# 📈 Modelo Escolhido
-
-O modelo escolhido foi o:
-
-**Random Forest Regressor**
-
-A escolha foi baseada no menor RMSE e na melhor capacidade de generalização observada durante os testes.
-
----
-
-# 📁 Estrutura do Projeto
-
+```
 ```
 spanish-housing-price-prediction/
 
@@ -192,7 +68,7 @@ spanish-housing-price-prediction/
 │       └── metricas_v1.json
 │
 ├── notebooks/
-│   └── Projeto.ipynb
+│   └── projetofinal.ipynb
 │
 ├── outputs/
 │   └── figures/
@@ -207,64 +83,252 @@ spanish-housing-price-prediction/
 
 ---
 
-# 📊 Métricas do Modelo
+# Tecnologias utilizadas
 
-As métricas da versão **v1** encontram-se em:
+O projeto foi desenvolvido em Python utilizando as bibliotecas:
 
+- Pandas
+- NumPy
+- Matplotlib
+- Scikit-Learn
+- Joblib
+- Jupyter Notebook
+
+---
+
+# Etapas do projeto
+
+## 1. Análise exploratória
+
+Inicialmente foi realizada uma análise exploratória dos dados para compreender:
+
+- distribuição das variáveis;
+- valores ausentes;
+- tipos de dados;
+- outliers;
+- inconsistências;
+- correlações.
+
+Também foram produzidos gráficos descritivos para auxiliar na compreensão da base.
+
+---
+
+## 2. Limpeza dos dados
+
+Foram realizados diversos tratamentos, incluindo:
+
+- remoção de imóveis para aluguel;
+- remoção de registros inconsistentes;
+- tratamento de valores ausentes;
+- remoção de duplicidades;
+- padronização de textos;
+- simplificação de variáveis categóricas.
+
+Exemplos:
+
+- variável **garage** transformada em variável binária (`garage_included`);
+- variável **floor** decomposta em:
+  - andar;
+  - exterior;
+  - floor_na;
+- simplificação das categorias de condição do imóvel.
+
+---
+
+## 3. Engenharia de atributos
+
+Foram criadas novas variáveis para melhorar a capacidade preditiva do modelo:
+
+- percentual de área útil (`perc_area_util`);
+- quartos por metro quadrado (`rooms_per_m2`);
+- banheiros por quarto (`bath_per_room`);
+- garagem incluída;
+- andar;
+- exterior;
+- indicador de ausência de informação do andar.
+
+Também foi realizada codificação One-Hot das variáveis categóricas.
+
+---
+
+## 4. Tratamento de valores ausentes
+
+Os valores ausentes das variáveis numéricas foram preenchidos utilizando a **mediana**, estratégia escolhida por ser robusta à presença de outliers.
+
+---
+
+## 5. Seleção de variáveis
+
+Foi realizada análise de multicolinearidade utilizando:
+
+- matriz de correlação;
+- VIF (Variance Inflation Factor).
+
+Variáveis altamente correlacionadas foram removidas ou simplificadas para reduzir redundâncias.
+
+---
+
+## 6. Preparação para modelagem
+
+Foi realizada:
+
+- separação entre variáveis explicativas (X) e variável alvo (y);
+- transformação logarítmica da variável alvo:
+
+```python
+price_log = np.log1p(price)
 ```
-models/v1/metricas_v1.json
-```
 
-São registradas automaticamente:
+- divisão treino/teste (80/20);
+- escalonamento das variáveis quando necessário.
+
+---
+
+# Modelos avaliados
+
+Foram treinados quatro algoritmos de regressão:
+
+- Regressão Linear
+- KNN Regressor
+- Árvore de Decisão
+- Random Forest
+
+---
+
+# Métricas utilizadas
+
+Os modelos foram comparados utilizando:
 
 - MAE
 - MSE
 - RMSE
 - R²
-- Data de treinamento
-- Lista das variáveis utilizadas
+
+Além disso, foi realizada comparação entre treino e teste para verificar overfitting.
 
 ---
 
-# 💾 Versionamento
+# Resultados
 
-Modelo atual:
+## Regressão Linear
 
-```
-v1
-```
+|Conjunto|MAE|RMSE|R²|
+|--------|------:|------:|------:|
+|Treino|0.4411|0.5938|0.7833|
+|Teste|0.4406|0.5845|0.7832|
 
-Arquivo:
-
-```
-models/v1/modelo_random_forest_v1.pkl
-```
-
-O projeto foi estruturado para permitir futuras versões:
-
-```
-models/
-    v1/
-    v2/
-    v3/
-```
-
-preservando o histórico dos modelos treinados.
+Excelente capacidade de generalização.
 
 ---
 
-# 🚀 Como Executar
+## KNN
 
-Clone o repositório:
+|Conjunto|MAE|RMSE|R²|
+|--------|------:|------:|------:|
+|Treino|0.4166|0.6182|0.7651|
+|Teste|0.4568|0.6771|0.7091|
 
-```bash
-git clone https://github.com/seuusuario/spanish-housing-price-prediction.git
+Apresentou desempenho inferior aos demais modelos.
+
+---
+
+## Árvore de Decisão
+
+|Conjunto|MAE|RMSE|R²|
+|--------|------:|------:|------:|
+|Treino|0.3132|0.4809|0.8579|
+|Teste|0.3771|0.5855|0.7824|
+
+Apresentou leve overfitting.
+
+---
+
+## Random Forest
+
+|Conjunto|MAE|RMSE|R²|
+|--------|------:|------:|------:|
+|Treino|0.1187|0.1869|0.9785|
+|Teste|0.3181|0.5033|0.8392|
+
+Foi o modelo de melhor desempenho.
+
+Na escala original dos preços:
+
+- **MAE:** € 139.308,43
+- **RMSE:** € 382.600,19
+- **R²:** 0,6264
+
+---
+
+# Modelo escolhido
+
+O modelo campeão foi a **Random Forest**, pois apresentou:
+
+- menor MAE;
+- menor RMSE;
+- maior R²;
+- melhor desempenho geral no conjunto de teste.
+
+---
+
+# Principais variáveis importantes
+
+A análise de importância das variáveis mostrou que os atributos com maior influência na previsão dos preços foram:
+
+- número de banheiros;
+- população da província;
+- área do imóvel;
+- tipo do imóvel;
+- número de quartos;
+- elevador;
+- andar;
+- garagem;
+- características estruturais do imóvel.
+
+---
+
+# Avaliação gráfica
+
+Foram construídos os seguintes gráficos:
+
+- Valores Reais × Valores Previstos;
+- Distribuição dos resíduos;
+- Resíduos × Valores previstos;
+- Importância das variáveis.
+
+Os gráficos demonstraram boa capacidade de generalização do modelo e ausência de viés sistemático relevante.
+
+---
+
+# Versionamento
+
+O modelo final foi salvo em:
+
+```
+models/v1/modelo_regressao_rf_final_v1.pkl
 ```
 
-Entre na pasta:
+Também foi criado:
+
+```
+models/v1/metricas_v1.json
+```
+
+contendo:
+
+- métricas de desempenho;
+- data do treinamento;
+- hiperparâmetros;
+- lista das variáveis utilizadas.
+
+---
+
+# Como executar
+
+Clone o projeto:
 
 ```bash
-cd spanish-housing-price-prediction
+git clone https://github.com/MarcioPaiano/SENAI-Projeto3.git
 ```
 
 Instale as dependências:
@@ -279,37 +343,42 @@ Abra o notebook:
 jupyter notebook
 ```
 
-Execute todas as células na ordem apresentada.
+ou
+
+```bash
+jupyter lab
+```
+
+Execute o notebook:
+
+```
+projetofinal.ipynb
+```
 
 ---
 
-# 📌 Resultados
+# Possíveis melhorias
 
-O projeto demonstrou que modelos baseados em árvores, especialmente o Random Forest Regressor, apresentam melhor desempenho para a previsão de preços de imóveis quando comparados à Regressão Linear.
+Como trabalhos futuros podem ser desenvolvidos:
 
-Além disso, a análise exploratória evidenciou:
-
-- forte assimetria da variável preço;
-- presença de imóveis de alto padrão (outliers);
-- influência significativa da área construída, quantidade de banheiros e localização sobre o preço dos imóveis.
-
----
-
-# 🔮 Melhorias Futuras
-
-As próximas versões poderão incluir:
-
-- ajuste de hiperparâmetros com GridSearchCV;
-- validação cruzada (Cross Validation);
-- XGBoost Regressor;
-- LightGBM;
-- CatBoost;
-- seleção automática de atributos;
-- otimização do tratamento de outliers;
-- implantação do modelo via API utilizando Flask ou FastAPI;
-- criação de dashboard interativo com Streamlit.
+- otimização de hiperparâmetros (Grid Search);
+- validação cruzada;
+- inclusão de novas variáveis geográficas;
+- utilização de latitude e longitude;
+- utilização de XGBoost;
+- utilização de LightGBM;
+- utilização de CatBoost;
+- deploy do modelo utilizando Streamlit ou Flask.
 
 ---
+
+# Conclusão
+
+O projeto permitiu aplicar todas as etapas do processo de Ciência de Dados, desde a exploração e tratamento da base até a construção, avaliação e versionamento de modelos preditivos.
+
+Entre os algoritmos avaliados, a **Random Forest** apresentou o melhor desempenho, demonstrando elevada capacidade preditiva e boa generalização para novos dados. Apesar da margem média de erro observada, o modelo mostrou-se adequado como ferramenta de apoio para estimativas preliminares de preços e análises do mercado imobiliário.
+
+Além do desenvolvimento dos modelos, o projeto evidenciou a importância da qualidade dos dados, da engenharia de atributos e da comparação entre diferentes algoritmos para obtenção de resultados mais robustos e confiáveis.
 
 # 👨‍💻 Autor
 
