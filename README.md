@@ -443,3 +443,8 @@ Além do desenvolvimento dos modelos, o projeto evidenciou a importância da qua
 **Marcio Paiano de Souza**
 
 Projeto desenvolvido para a disciplina de **Análise Preditiva** utilizando técnicas de Ciência de Dados e Machine Learning em Python.
+
+
+## Licença
+
+Este projeto está licenciado sob a **MIT License**. Consulte o arquivo [LICENSE](LICENSE) para mais informações.
