@@ -2,7 +2,7 @@
     "versao": "v1",
     "modelo": "Random Forest Regressor",
     "algoritmo": "RandomForestRegressor",
-    "data_treinamento": "2026-07-17T19:16:23",
+    "data_treinamento": "2026-07-17T21:39:54",
     "variavel_alvo": "price_log",
     "transformacao_alvo": "np.log1p(price)",
     "divisao_amostral": {
@@ -15,20 +15,20 @@
         "min_samples_split": 2,
         "min_samples_leaf": 1,
         "max_features": "sqrt",
-        "max_depth": 20,
+        "max_depth": null,
         "random_state": 42
     },
     "metricas_teste_log": {
-        "MAE": 0.32276360270400745,
-        "MSE": 0.2554739187384242,
-        "RMSE": 0.5054442785692842,
+        "MAE": 0.3227636027040074,
+        "MSE": 0.25547391873842423,
+        "RMSE": 0.5054442785692843,
         "R2": 0.8378696526050876
     },
     "metricas_teste_escala_original": {
         "MAE": 141178.0703567111,
-        "MSE": 147597907815.34262,
-        "RMSE": 384184.731366751,
-        "R2": 0.6232945711751681
+        "MSE": 147597907815.3426,
+        "RMSE": 384184.73136675096,
+        "R2": 0.6232945711751683
     },
     "numero_registros_treinamento_final": 81582,
     "numero_variaveis_explicativas": 45,
